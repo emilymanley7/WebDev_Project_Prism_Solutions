@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="animehavencontact.css">
+    <title>
+        Anime Haven: Contact
+    </title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+<body>
+    <div class="form-container">
+        <div class="wrapper">
+            <h2>Contact Me!</h2><br>
+            <div class="form-section">
+                <div class="form-details">
+                    <ul>
+                        <li>
+                            <div class="icons">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Location:</strong>
+                                <p>123 Anywhere St., Any City, State, Country</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icons">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Email:</strong>
+                                <p>xyz@gmail.com</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icons">
+                                <i class="fa-solid fa-phone-volume"></i>
+                            </div>
+                            <div class="content">
+                                <strong>Phone Number:</strong>
+                                <p>+353 86 123 4567</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <form id="contactForm" method="POST" action="anotherfile.html" novalidate>
+
+                    <div class="form-group">
+                        <input type="text" id="name" required class="form-control">
+                        <span class="form-label">Name</span>
+                        <small class="error-msg">Please enter your name.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" required class="form-control">
+                        <span class="form-label">Email Address</span>
+                        <small class="error-msg">Please enter a valid email address.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="service" required class="form-control">
+                            <option value="" disabled selected hidden></option>
+                            <option value="Stock Requests">Stock Requests</option>
+                            <option value="Order Tracking">Order Tracking</option>
+                            <option value="Events">Events</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="form-label">Request Type</span>
+                        <small class="error-msg">Please select a request type.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="inquiry" required class="form-control">
+                            <option value="" disabled selected hidden></option>
+                            <option value="Event Booking">Event Booking</option>
+                            <option value="Product Recommendations">Product Recommendations</option>
+                            <option value="General Questions">General Questions</option>
+                        </select>
+                        <span class="form-label">Inquiry Type</span>
+                        <small class="error-msg">Please select an inquiry type.</small>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="details" cols="30" rows="10" class="form-control" required></textarea>
+                        <span class="form-label">Additional Details</span>
+                        <small class="error-msg">Please provide some details.</small>
+                    </div>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('contactForm');
+
+        form.addEventListener('submit', function (e) {
+            let isValid = true;
+            const inputs = form.querySelectorAll('.form-control');
+
+            inputs.forEach(input => {
+                const formGroup = input.parentElement;
+                const errorMsg = formGroup.querySelector('.error-msg');
+
+                input.style.borderColor = '#ddd';
+                errorMsg.style.display = 'none';
+
+                if (!input.checkValidity()) {
+                    isValid = false;
+                    input.style.borderColor = 'red';
+                    errorMsg.style.display = 'block';
+                }
+            });
+
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+    </script>
+</html>

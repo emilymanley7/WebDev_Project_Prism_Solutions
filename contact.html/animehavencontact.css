@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background: url('StockCake-Sunset_Anime_Dreams-4661454-standard.png') no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  overflow-y: auto;
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: auto;
+  box-shadow: 4px 3px 4px #fff;
+  border-radius: 5px;
+}
+
+.wrapper h2 {
+  font-size: 3rem;
+  color: #fff;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.wrapper h2::after {
+  content: "";
+  height: 5px;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 18%;
+  background: teal;
+}
+
+.form-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  gap: 20px;
+}
+
+.form-details ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-details .icons {
+  background: aquamarine;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  color: #fff;
+}
+
+.form-details li {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
+  margin: 0.8rem 0;
+}
+
+.form-details li i {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.form-details strong {
+  color: lightblue;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.form-group .form-control {
+  width: 100%;
+  outline: none;
+  border: 2px solid #ddd;
+  padding: 0.8rem;
+  margin: 0;
+  resize: none;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 50px;
+}
+
+
+textarea.form-control {
+  height: auto;
+  min-height: 150px;
+}
+
+.form-group span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.8rem;
+  pointer-events: none;
+  font-size: 0.9rem;
+  color: #666;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+/* Floating label logic */
+.form-group .form-control:focus ~ span,
+.form-group .form-control:valid ~ span {
+  background: #e50d73;
+  color: #fff;
+  transform: translateX(10px) translateY(-22px);
+  font-size: 0.8rem;
+  padding: 0 10px;
+  border-radius: 2px;
+}
+
+/* Styling for the Error Message */
+.error-msg {
+  display: none; /* Hidden by default */
+  color: #ff6b6b; /* Bright red/pink readable on dark bg */
+  font-size: 0.85rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+form button {
+  outline: none;
+  border: none;
+  background: aquamarine;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  display: block;
+  cursor: pointer;
+  transition: 0.4s;
+  width: 50%;
+  font-weight: bold;
+}
+
+form button:active {
+  transform: scale(0.98);
+}
+
+@media(max-width: 768px) {
+  .form-section {
+    grid-template-columns: 1fr;
+  }
+
+  .wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .wrapper h2::after {
+    content: "";
+    height: 3px;
+    position: absolute;
+    top: 90px;
+  }
+
+  .form-details li {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+  }
+  
+  form button {
+      width: 100%;
+  }
+}

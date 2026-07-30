@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background: url('StockCake-Sunset_Anime_Dreams-4661454-standard.png') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  background-color: #0b0f19;
+  display: flex;
+  flex-direction: column;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 15, 25, 0.7);
+  z-index: -1;
+}
+
+/* Header Navigation */
+.sub-header {
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.nav-links ul li {
+  display: inline-block;
+  padding: 8px 12px;
+}
+
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #7fffd4;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+nav .fa-bars, nav .fa-xmark {
+  display: none;
+}
+
+/* Thank You Card Layout */
+.thank-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.thank-card {
+  max-width: 550px;
+  width: 100%;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.check-icon {
+  font-size: 4rem;
+  color: #7fffd4;
+  margin-bottom: 1.5rem;
+}
+
+.thank-card h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.thank-card p {
+  color: #a0aec0;
+  font-family: sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+}
+
+/* Return Home Button */
+.home-btn {
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #7fffd4;
+  background: transparent;
+  color: #7fffd4;
+  padding: 0.9rem 2rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  transition: 0.4s;
+}
+
+.home-btn:hover {
+  background: #7fffd4;
+  color: #0b0f19;
+  box-shadow: 0 0 15px rgba(127, 255, 212, 0.4);
+}
+
+/* Responsive Styles */
+@media(max-width: 768px) {
+  .thank-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .thank-card h2 {
+    font-size: 2rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    background: #00b386;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    z-index: 1000;
+    transition: 0.5s;
+    padding-top: 20px;
+  }
+
+  nav .fa-bars {
+    display: block;
+    color: #7fffd4;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links .fa-xmark {
+    display: block;
+    color: #fff;
+    margin: 10px 25px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul li {
+    display: block;
+    margin-top: 15px;
+  }
+}

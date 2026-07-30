@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Global Reset */
 * {
     margin: 0px;
     padding: 0px;
@@ -11,10 +10,9 @@
 html, body {
     width: 100%;
     overflow-x: hidden;
-    background-color: #0b0f19; /* Deep dark background matching main page */
+    background-color: #0b0f19;
 }
 
-/* Sub-Header Navigation */
 .sub-header {
     width: 100%;
     background-color: #0b0f19;
@@ -55,7 +53,7 @@ nav img {
     content: '';
     width: 0%;
     height: 2px;
-    background: #7fffd4; /* Aquamarine accent */
+    background: #7fffd4;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -71,7 +69,6 @@ nav .fa-xmark {
     display: none;
 }
 
-/* Page Container */
 .section {
     width: 100%;
     min-height: 80vh;
@@ -113,7 +110,7 @@ nav .fa-xmark {
 
 .content-section .content h3 {
     margin-top: 15px;
-    color: #7fffd4; /* Aquamarine headline */
+    color: #7fffd4
     font-size: 22px;
 }
 
@@ -122,7 +119,7 @@ nav .fa-xmark {
     font-family: sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #a0aec0; /* Soft readable dark-mode text */
+    color: #a0aec0;
 }
 
 /* Button Styling */

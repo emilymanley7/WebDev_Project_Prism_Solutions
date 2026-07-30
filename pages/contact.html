@@ -74,19 +74,19 @@
                 <form id="contactForm" method="GET" action="contactthanks.html" novalidate>
 
                     <div class="form-group">
-                        <input type="text" id="name" required class="form-control" placeholder=" ">
+                        <input type="text" id="name" required class="form-control" placeholder=" " aria-label="Name">
                         <span class="form-label">Name</span>
                         <small class="error-msg">Please enter your name.</small>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" id="email" required class="form-control" placeholder=" ">
+                        <input type="email" id="email" required class="form-control" placeholder=" " aria-label="Email Address">
                         <span class="form-label">Email Address</span>
                         <small class="error-msg">Please enter a valid email address.</small>
                     </div>
 
                     <div class="form-group">
-                        <select id="service" required class="form-control">
+                        <select id="service" required class="form-control" aria-label="Request Type">
                             <option value="" disabled selected hidden></option>
                             <option value="Stock Requests">Stock Requests</option>
                             <option value="Order Tracking">Order Tracking</option>
@@ -98,7 +98,7 @@
                     </div>
 
                     <div class="form-group">
-                        <select id="inquiry" required class="form-control">
+                        <select id="inquiry" required class="form-control" aria-label="Inquiry Type">
                             <option value="" disabled selected hidden></option>
                             <option value="Event Booking">Event Booking</option>
                             <option value="Product Recommendations">Product Recommendations</option>
@@ -109,7 +109,7 @@
                     </div>
 
                     <div class="form-group">
-                        <textarea id="details" cols="30" rows="6" class="form-control" required placeholder=" "></textarea>
+                        <textarea id="details" cols="30" rows="6" class="form-control" required placeholder=" " aria-label="Additional Details"></textarea>
                         <span class="form-label">Additional Details</span>
                         <small class="error-msg">Please provide some details.</small>
                     </div>

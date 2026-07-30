@@ -8,7 +8,7 @@
 }
 
 body {
-  background: url('StockCake-Sunset_Anime_Dreams-4661454-standard.png') no-repeat center center fixed;
+  background: url('../media/StockCake-Sunset_Anime_Dreams-4661454-standard.png') no-repeat center center fixed;
   background-size: cover;
   min-height: 100vh;
   position: relative;

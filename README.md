@@ -1,13 +1,13 @@
 # WebDev_Project_Prism_Solutions
-A professional web development project by Prism Solutions, featuring a fully responsive e-commerce front-end for **Anime Haven**.
+An advanced web development project made by Prism Solutions, including a fully responsive e-commerce website for the store **Anime Haven**. Developed for Sofia Martinez, with an emphasis on accessibility.
 
-## Project Overview
-This website is built from the ground up to provide a welcoming, dynamic, and engaging user experience for anime enthusiasts. It demonstrates core front-end development principles, combining semantic structure, clean presentation, and interactive features.
+## Project Description
+Our website is developed with a view of ensuring the most user-friendly and modern user experience of anime lovers. This project highlights the main concepts of front-end development by using the correct structure, presentation, and interactivity.
 
 ## Tech Stack
-* **HTML5:** Used for semantic layout and core structure.
-* **CSS3:** Utilized for modern styling, responsive design, and layout management.
-* **JavaScript:** Implemented to provide interactive elements and dynamic functionality.
+* **HTML5:** Used for semantic structure.
+* **CSS3:** Applied for modern styling and responsiveness.
+* **JavaScript:** Added for interactivity.
 
-## Key Features
-* **Accessibility-First Design:** Fully accessible layout conforming to modern standards to ensure usability for individuals with diverse needs and disabilities.
+## Main Features
+* **Fully Accessible Design:** A fully accessible layout according to modern accessibility standards.
